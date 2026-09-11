@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Dashboard</title>
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Sidebar -->
+        <div class="navigation">
+            <ul>
+                <li data-brand="true">
+                    <a href="home.html" title="Back to Hotel Website">
+                        <span class="icon"><ion-icon name="business"></ion-icon></span>
+                        <span class="title">Hotel Admin</span>
+                    </a>
+                </li>
+
+                <li class="hovered">
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="grid-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="bookings.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Bookings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
+                        <span class="title">Billing & Invoice</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="home.html">
+                        <span class="icon"><ion-icon name="globe-outline"></ion-icon></span>
+                        <span class="title">Public Website</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="home.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main">
+            <!-- Topbar Header -->
+            <div class="topbar">
+                <div class="toggle" title="Toggle Sidebar">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="topbar-right">
+                    <a href="home.html" class="site-link">
+                        <ion-icon name="open-outline"></ion-icon>
+                        <span>Visit Website</span>
+                    </a>
+                    <div class="user" title="Admin Profile">
+                        <img src="logo-img/user.jpg" alt="User Profile">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Card Box -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">5</div>
+                        <div class="cardName">Total Rooms</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="bed-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">1</div>
+                        <div class="cardName">Current Guests</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">1</div>
+                        <div class="cardName">Bookings</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">₱0</div>
+                        <div class="cardName">Revenue Today</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Occupancy Rate Section -->
+            <div class="details">
+                <div class="occupancy-card">
+                    <h2>Occupancy Rate</h2>
+
+                    <div class="occupancy-bar">
+                        <div class="occupancy-fill"></div>
+                    </div>
+
+                    <div class="occupancy-details">
+                        <div class="occupancy-item">
+                            <span class="label">Occupied</span>
+                            <span class="number blue">1</span>
+                        </div>
+
+                        <div class="occupancy-item">
+                            <span class="label">Available</span>
+                            <span class="number green">4</span>
+                        </div>
+
+                        <div class="occupancy-item">
+                            <span class="label">Total</span>
+                            <span class="number orange">5</span>
+                        </div>
+
+                        <div class="occupancy-percent">
+                            20.0%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

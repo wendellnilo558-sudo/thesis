@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT Hotel Reservation</title>
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <nav>
+            <a href="home.html" class="logo-link">
+                <img src="logo-img/logo.png" class="logo" alt="CCT Hotel Logo" onerror="this.src='images/logo.png'">
+                <div class="logo-text">CCT <span>Hotel</span></div>
+            </a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="login-btn" id="openLoginBtn">Log In</a>
+                <a href="index.html" class="reg-btn">Dashboard &rarr;</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1>Your Perfect Stay Awaits You</h1>
+            <p>Experience world-class hospitality with seamless reservations. Book your room in minutes and enjoy an unforgettable stay.</p>
+            <a href="#rooms" class="book-btn">Explore Rooms</a>
+        </div>
+    </div>
+
+    <!-- ROOMS SECTION -->
+    <section class="rooms" id="rooms">
+        <h2>Rooms We Offer</h2>
+        <p class="rooms-subtitle">Choose the perfect room for your stay</p>
+
+        <div class="room-container">
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Standard Room" onerror="this.src='images/mamamo.jpg'">
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <p>Comfortable room perfect for solo travelers or couples seeking quality and relaxation.</p>
+                    <span>₱2,500 / night</span>
+                    <a href="index.html" class="room-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="images/mamamo.jpg" alt="Deluxe Room" onerror="this.src='images/room.jpg'">
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious room with additional amenities, premium king bed, and balcony city view.</p>
+                    <span>₱3,500 / night</span>
+                    <a href="index.html" class="room-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="images/room.jpg" alt="Suite Room" onerror="this.src='images/mamamo.jpg'">
+                <div class="room-info">
+                    <h3>Suite Room</h3>
+                    <p>Elegant and luxurious master suite designed with living area and executive perks.</p>
+                    <span>₱5,000 / night</span>
+                    <a href="index.html" class="room-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="images/mamamo.jpg" alt="Family Room" onerror="this.src='images/room.jpg'">
+                <div class="room-info">
+                    <h3>Family Room</h3>
+                    <p>Large suite with multiple beds, kitchenette, and entertainment space for families.</p>
+                    <span>₱4,500 / night</span>
+                    <a href="index.html" class="room-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGIN POPUP MODAL -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="loginPopup">
+        <div class="close-btn" id="closeLogin">&times;</div>
+        <div class="form">
+            <h2>Staff / Admin Log In</h2>
+            <p class="form-desc">Sign in to access your hotel reservation & management dashboard</p>
+            <form id="loginForm">
+                <div class="form-element">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="admin@ccthotel.com" value="admin@ccthotel.com" required>
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" value="password123" required>
+                </div>
+                <div class="form-element remember-me">
+                    <input type="checkbox" id="remember-me" checked>
+                    <label for="remember-me">Remember this device</label>
+                </div>
+                <div class="form-element">
+                    <button type="submit" id="loginSubmitBtn">Sign In to Dashboard</button>
+                </div>
+                <div class="form-footer">
+                    <a href="#">Forgot password?</a>
+                    <a href="index.html">Quick Access &rarr;</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="home.js"></script>
+</body>
+
+</html>
